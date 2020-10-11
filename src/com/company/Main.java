@@ -22,12 +22,12 @@ public class Main {
         return (int) w;
     }
     public static void draw(int h, int w) {
-        for(int i = h ; i > 0; i--) {//Внешний цикл перебирает строки вывода с h до 1
-            for(int j = 0; j < w; j++)//Внутренний цикл перебирает элементы строки от 0 до w-1
-                if(j / i % 2 == 0)//если элемент строки при делении на номер строки результат четный, то выводим "a"
+        for(int i = h ; i > 0; i--) {
+            for(int j = 0; j < w; j++)
+                if(j / i % 2 == 0)
                     System.out.print("a");
                 else
-                    System.out.print("b");//иначе выводим "b"
+                    System.out.print("b");
             System.out.println();
         }
     }
