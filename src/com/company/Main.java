@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         int h = readVariable("h");
         int w = readVariable("w");
         drawPicture(h, w);
     }
+    
     private static int readVariable(String variable) {
         Scanner scanner = new Scanner(System.in);
         System.out.printf("Введите %s: ", variable);
